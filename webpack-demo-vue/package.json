@@ -1,0 +1,32 @@
+{
+  "name": "xw",
+  "version": "1.0.0",
+  "description": "webpack init",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --inline --progress --mode development --config build/webpack.dev.js",
+    "build:ci": "cross-env NODE_ENV=production ENV_CONFIG=ci webpack --mode production  --config build/webpack.pro.js",
+    "build:online": "cross-env NODE_ENV=production ENV_CONFIG=online --mode production webpack --config build/webpack.pro.js"
+  },
+  "author": "xw",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.4.4",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^2.0.1",
+    "cross-env": "^5.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "vue-loader": "^15.7.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "dependencies": {
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.6"
+  }
+}

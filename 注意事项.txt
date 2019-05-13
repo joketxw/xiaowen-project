@@ -1,0 +1,11 @@
+运行npm run build 报错的原因：
+
+ "scripts": {
+    "dev": "webpack-dev-server webpack.config.js",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+运行build时 不需要添加 "build": "webpack webpack.config.js",不然会报错 他默认根路径下执行的是这个文件
+
+
